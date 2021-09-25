@@ -39,19 +39,31 @@ CREATE TABLE vuelos (
     CONSTRAINT FK_movimiento FOREIGN KEY (ID_MOVIMIENTO) REFERENCES movimientos(ID_MOVIMIENTO)
 );
 
+/*
+Registros de la tabla aerolíneas
+*/
 INSERT INTO aerolineas (NOMBRE_AEROLINEA) VALUES ('Volaris');
 INSERT INTO aerolineas (NOMBRE_AEROLINEA) VALUES ('Aeromar');
 INSERT INTO aerolineas (NOMBRE_AEROLINEA) VALUES ('Interjet');
 INSERT INTO aerolineas (NOMBRE_AEROLINEA) VALUES ('Aeromexico');
 
+/*
+Registros de la tabla aeropuertos
+*/
 INSERT INTO aeropuertos (NOMBRE_AEROPUERTO) VALUES ('Benito Juarez');
 INSERT INTO aeropuertos (NOMBRE_AEROPUERTO) VALUES ('Guanajuato');
 INSERT INTO aeropuertos (NOMBRE_AEROPUERTO) VALUES ('La paz');
 INSERT INTO aeropuertos (NOMBRE_AEROPUERTO) VALUES ('Oaxaca');
 
+/*
+Registros de la tabla movimientos
+*/
 INSERT INTO movimientos (DESCRIPCION) VALUES ('Salida');
 INSERT INTO movimientos (DESCRIPCION) VALUES ('Llegada');
 
+/*
+Registros de la tabla vuelos
+*/
 INSERT INTO vuelos (ID_AEROLINEA, ID_AEROPUERTO, ID_MOVIMIENTO, DIA) VALUES (1, 1, 1, '2021-05-02');
 INSERT INTO vuelos (ID_AEROLINEA, ID_AEROPUERTO, ID_MOVIMIENTO, DIA) VALUES (2, 1, 1, '2021-05-02');
 INSERT INTO vuelos (ID_AEROLINEA, ID_AEROPUERTO, ID_MOVIMIENTO, DIA) VALUES (3, 2, 2, '2021-05-02');
